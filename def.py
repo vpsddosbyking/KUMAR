@@ -169,7 +169,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
         await update.message.reply_text("❌ Access expired or unauthorized. Please redeem a valid key.")
-        return DM = @KINGVIPHACK77
+        return 
 
     if flooding_process is not None:
         await update.message.reply_text('Flooding is already running.')
